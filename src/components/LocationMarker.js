@@ -6,7 +6,7 @@ import locationIconVolcano from '@iconify/icons-mdi/mountain'
 export default function LocationMarker({ lat, lng, onClick, eventCategory }) {
 
     return (
-        <div className="location-marker" onClick={onClick()} >
+        <div className="location-marker" onClick={() => onClick()} >
             {eventCategory === "wildfires" ?
                 <Icon icon={locationIconWildfire} className="location-icon" /> :
                 <Icon icon={locationIconVolcano} className="location-icon" />}
