@@ -8,7 +8,7 @@ export default function LocationMarker({ lat, lng, onClick, eventCategory }) {
     return (
         <div className="location-marker" onClick={() => onClick()} >
             {eventCategory === "wildfires" ?
-                <Icon onMouseDown={() => onClick()} icon={locationIconWildfire} className="location-icon" /> :
+                <p>X<Icon onMouseDown={() => onClick()} icon={locationIconWildfire} className="location-icon" /></p> :
                 <Icon onMouseDown={() => onClick()} icon={locationIconVolcano} className="location-icon" />}
         </div>
     )
